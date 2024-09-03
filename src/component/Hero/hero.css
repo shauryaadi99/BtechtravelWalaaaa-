@@ -1,0 +1,50 @@
+.mainContainer{
+    background: url("/long-boat-blue-water-maya-bay-phi-phi-island-krabi-thailand.jpg");
+    width: 100%;
+    aspect-ratio: 16/9;
+    max-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.heroContainer{
+    width: 70%;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100% - 100px);
+    /* height: 100%; */
+}
+
+.heroTitle h1{
+    font-family: "League Spartan", sans-serif;
+    font-size: 6rem;
+    transition: 0.1s;
+    line-height: 5.2rem;
+    margin-bottom: 0;
+
+    &:hover{
+        -webkit-text-stroke: 2px #fff;
+        color: transparent;
+    }
+}
+
+.heroTitle h3{
+    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.heroMainPara{
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    width: 60%;
+    margin-top: 1rem;
+}
+
+.heroBtn button{
+    font-family: "DM Sans", sans-serif;
+}

@@ -6,12 +6,11 @@
     justify-content: space-around;
     padding: 40px 50px;
     align-items: flex-start;
-
-
 }
 
 .svgContainer{
     aspect-ratio: 25/2;
+    background-color: #f8faff;
 }
 
 .svgContainer img{

@@ -3,7 +3,7 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 50px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     width: 100%;
     aspect-ratio: 7/2;
     background: linear-gradient(180deg, rgba(216, 151, 240, 0.3) 0%, rgba(230, 202, 240, 0.3) 100%);

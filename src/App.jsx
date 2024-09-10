@@ -4,6 +4,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Services from "./component/Services/Services";
 import ContactForm from "./component/ContactForm/ContactForm";
 import Footer from "./component/Footer/Footer";
+import TripCalculator from "./component/TripCalculator/TripCalculator";
+import ImageSlider from "./component/carousel/ImageSlider";
+import HappyCustomers from "./component/HappyCustomers/HappyCustomers";
+import HoneymoonDesties from "./component/HoneyMoondesties/HoneymoonDesties";
+import Testimonial from "./component/testimonial/testimonial";
+import TrandingSlider from "./component/TrandingSlider/TrandingSlider";
 
 function App() {
   return (
@@ -16,7 +22,13 @@ function App() {
               <>
                 <Hero />
                 <Services></Services>
+                <ImageSlider />
+                {/* <TripCalculator />  */}
+                <HappyCustomers />
+                <Testimonial />
                 <ContactForm />
+                <HoneymoonDesties />
+                <TrandingSlider />
                 <Footer></Footer>
               </>
             }

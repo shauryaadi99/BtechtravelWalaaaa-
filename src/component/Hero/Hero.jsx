@@ -17,6 +17,20 @@ const Hero = () => {
   return (
     <>
       <div className="mainContainer">
+        <iframe
+          src="https://www.youtube.com/embed/Wcd6r97fOgo"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          style={{
+            position: "absolute",
+            width: "100%",
+            aspectRatio: "16/9",
+            border: "none",
+            zIndex: -1,
+          }}
+        ></iframe>
+
         <NavBar></NavBar>
         <motion.div
           className="heroContainer"

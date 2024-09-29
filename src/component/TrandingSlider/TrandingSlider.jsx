@@ -52,7 +52,6 @@ const TrandingSlider = () => {
         "Experience the unique beauty of the Rann of Kutch, where the white salt desert stretches as far as the eye can see. Visit during the Rann Utsav for cultural performances, handicrafts, and traditional cuisine.",
       imgSrc: img6,
     },
-    // Add more slide data as needed
   ];
 
   return (

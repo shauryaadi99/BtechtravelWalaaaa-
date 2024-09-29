@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ImageSlider.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -35,7 +35,7 @@ const data = [
     id: 5,
     name: "Braj Holi in Mathura Vrindavan",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt",
-    img: "/brajholi.jpg",
+    img: "/brajholi.webp",
   },
   {
     id: 6,
@@ -48,14 +48,25 @@ const data = [
 const ImageSlider = () => {
   const [currentData, setCurrentData] = useState(data);
 
+  const preloadImages = (data) => {
+    data.forEach((item) => {
+      const img = new Image(); // It creates a new image element in the memory but does not add it to the DOM.
+      img.src = item.img; // It sets the src attribute of the image element to the value of the img property of the item object.
+    });
+  };
+
+  useEffect(() => {
+    preloadImages(data);
+  }, []);
+
   const handleNextClick = () => {
-    setCurrentData((prevData) => [...prevData.slice(1), prevData[0]]);
+    setCurrentData((prevData) => [...prevData.slice(1), prevData[0]]); // It removes the first element from the array and adds it to the end of the array.
   };
 
   const handlePrevClick = () => {
     setCurrentData((prevData) => [
       prevData[prevData.length - 1],
-      ...prevData.slice(0, prevData.length - 1),
+      ...prevData.slice(0, prevData.length - 1), // It removes the last element from the array and adds it to the beginning of the array.
     ]);
   };
 
@@ -84,10 +95,18 @@ const ImageSlider = () => {
       </div>
 
       <div className="button">
-        <button className="prev" onClick={handlePrevClick}>
+        <button
+          className="prev"
+          onClick={handlePrevClick}
+          aria-label="Prev Slide"
+        >
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
-        <button className="next" onClick={handleNextClick}>
+        <button
+          className="next"
+          onClick={handleNextClick}
+          aria-label="Next Slide"
+        >
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
       </div>

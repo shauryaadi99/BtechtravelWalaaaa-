@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState } from "react";
 import "./ImageSlider.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -46,40 +46,33 @@ const data = [
 ];
 
 const ImageSlider = () => {
-  const slideRef = useRef(null);
+  const [currentData, setCurrentData] = useState(data);
 
-  useEffect(() => {
-    const next = document.querySelector(".next");
-    const prev = document.querySelector(".prev");
+  const handleNextClick = () => {
+    setCurrentData((prevData) => [...prevData.slice(1), prevData[0]]);
+  };
 
-    const handleNextClick = () => {
-      let items = document.querySelectorAll(".item");
-      slideRef.current.appendChild(items[0]);
-    };
-
-    const handlePrevClick = () => {
-      let items = document.querySelectorAll(".item");
-      slideRef.current.prepend(items[items.length - 1]);
-    };
-
-    next.addEventListener("click", handleNextClick);
-    prev.addEventListener("click", handlePrevClick);
-
-    return () => {
-      next.removeEventListener("click", handleNextClick);
-      prev.removeEventListener("click", handlePrevClick);
-    };
-  }, []);
+  const handlePrevClick = () => {
+    setCurrentData((prevData) => [
+      prevData[prevData.length - 1],
+      ...prevData.slice(0, prevData.length - 1),
+    ]);
+  };
 
   return (
     <div className="containerXY">
       <h2 className="slider-heading">Featured Destinations</h2>
-      <div className="slide" ref={slideRef}>
-        {data.map((item) => (
+      <div className="slide">
+        {currentData.map((item) => (
           <div
             key={item.id}
             className="item"
-            style={{ backgroundImage: `url(${item.img})` }}
+            style={{
+              backgroundImage: `url(${item.img})`,
+              backgroundSize: "cover",
+            }}
+            role="img"
+            aria-label={item.name}
           >
             <div className="content">
               <div className="name">{item.name}</div>
@@ -91,10 +84,10 @@ const ImageSlider = () => {
       </div>
 
       <div className="button">
-        <button className="prev">
+        <button className="prev" onClick={handlePrevClick}>
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
-        <button className="next">
+        <button className="next" onClick={handleNextClick}>
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
       </div>

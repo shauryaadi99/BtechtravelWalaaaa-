@@ -5,33 +5,29 @@ import "./HappyCustomers.css";
 
 const HappyCustomers = () => {
   const [counterOn, setCounterOn] = useState(false);
-  const [isAnimated, setIsAnimated] = useState(false);
 
   useEffect(() => {
     if (counterOn) {
-      setIsAnimated(true);
+      return;
     }
   }, [counterOn]);
 
   const handleEnter = () => {
-    if (!isAnimated) {
-      setCounterOn(true);
-    }
+    setCounterOn(true);
   };
 
   return (
     <div className="contain">
       <ScrollTrigger onEnter={handleEnter}>
         <div
-          className={`section section-work-data ${
-            isAnimated ? "animated" : ""
+          className={`section section-work-data animated 
           }`}
         >
           <div className="heavy">
             <h2>Trusted Vendors</h2>
             <p className="counter-numbers">
               {counterOn && (
-                <CountUp start={0} end={50} duration={4} delay={0} />
+                <CountUp start={0} end={50} duration={4} delay={0.3} />
               )}
               +
             </p>
@@ -40,7 +36,7 @@ const HappyCustomers = () => {
             <h2>Happy Customers</h2>
             <p className="counter-numbers">
               {counterOn && (
-                <CountUp start={100} end={600} duration={5} delay={0} />
+                <CountUp start={100} end={600} duration={4} delay={0.3} />
               )}
               +
             </p>
@@ -49,7 +45,7 @@ const HappyCustomers = () => {
             <h2>Region Unlocked</h2>
             <p className="counter-numbers">
               {counterOn && (
-                <CountUp start={0} end={10} duration={5} delay={0} />
+                <CountUp start={0} end={10} duration={4} delay={0.3} />
               )}
               +
             </p>

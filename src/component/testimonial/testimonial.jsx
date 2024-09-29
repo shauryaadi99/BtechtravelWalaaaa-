@@ -74,29 +74,27 @@ const Testimonial = () => {
         >
           {data.map((item) => {
             return (
-              <>
-                <SwiperSlide>
-                  <div className="swiper-client-msg">
-                    <p>{item.desc}</p>
+              <SwiperSlide key={item.id}>
+                <div className="swiper-client-msg">
+                  <p>{item.desc}</p>
+                </div>
+                <div className="swiper-client-data grid grid-two-column">
+                  <figure>
+                    <img
+                      className="img1"
+                      src={item.img}
+                      alt="Someone Else"
+                      style={{ aspectRatio: 1 / 1 }}
+                    />
+                  </figure>
+                  <div className="client-data-details">
+                    <p>
+                      <b>{item.name}</b>
+                    </p>
+                    <p>{item.profession}</p>
                   </div>
-                  <div className="swiper-client-data grid grid-two-column">
-                    <figure>
-                      <img
-                        className="img1"
-                        src={item.img}
-                        alt="Someone Else"
-                        style={{ aspectRatio: 1 / 1 }}
-                      />
-                    </figure>
-                    <div className="client-data-details">
-                      <p>
-                        <b>{item.name}</b>
-                      </p>
-                      <p>{item.profession}</p>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              </>
+                </div>
+              </SwiperSlide>
             );
           })}
         </Swiper>

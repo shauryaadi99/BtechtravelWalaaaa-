@@ -16,8 +16,8 @@ const variants = {
 const Hero = () => {
   return (
     <>
-      <div className="mainContainer">
-        <iframe
+      <div className="mainContainer" style={{ backgroundColor: "#000" }}>
+        {/* <iframe
           src="https://www.youtube.com/embed/Wcd6r97fOgo"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -29,7 +29,7 @@ const Hero = () => {
             border: "none",
             zIndex: -1,
           }}
-        ></iframe>
+        ></iframe> */}
 
         <NavBar></NavBar>
         <motion.div

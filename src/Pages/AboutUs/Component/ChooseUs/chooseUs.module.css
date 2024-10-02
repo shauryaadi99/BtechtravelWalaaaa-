@@ -1,12 +1,19 @@
 .container{
     display: flex;
-    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
     margin-top: 80px;
     margin-bottom: 80px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
+
+
 
 .imgContainer{
     width: 45%;
+    flex: 1;
 }
 
 .imgContainer img{
@@ -18,8 +25,80 @@
     width: 40%;
     padding: 20px;
     text-align: justify;
+    flex: 1;
 }
 
 .textContainer h1{
     font-weight: 600;
+}
+
+.heading{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.heading span{
+    color: #d897f0;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) and  (min-width: 768px){
+    .heading span{
+        font-size: 1.2rem !important;
+    }
+
+    .heading{
+        font-size: 2rem !important;
+    }
+}
+
+@media (min-width: 1500px){
+    .heading span{
+        font-size: 2rem !important;
+    }
+
+    .heading{
+        font-size: 3.2rem !important;
+    }
+
+    .textContainer p{
+        font-size: 1.2rem !important;
+    }
+    
+}
+
+@media (max-width: 1024px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgContainer{
+        width: 100% !important;
+    }
+
+    .textContainer{
+        width: 100% !important;
+        padding: 0 !important;
+
+    }
+}
+
+@media (max-width: 540px){
+    .heading span{
+        font-size: 1rem !important;
+    }
+
+    .heading{
+        font-size: 1.3rem !important;
+    }
+
+    .textContainer p{
+        font-size: 0.9rem !important;
+    }
+
+
 }

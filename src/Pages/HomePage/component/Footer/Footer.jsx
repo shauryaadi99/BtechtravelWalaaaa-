@@ -35,7 +35,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className={style.container}>
+          <div className={`${style.container} ${style.quickLinks}`}>
             <h4>Quick Links</h4>
             <ul>
               <li>Home</li>
@@ -67,8 +67,8 @@ const Footer = () => {
         </div>
         <div className={style.bottomFooter}>
           <p>
-            &copy; 2024 BtechTravelWala.com | All Rights Reserved | Designed by
-            <span> BtechTravelWala.com</span>
+            &copy; 2024 BtechTravelWala.com | All Rights Reserved |
+            <span> Designed by BtechTravelWala.com</span>
           </p>
         </div>
       </div>

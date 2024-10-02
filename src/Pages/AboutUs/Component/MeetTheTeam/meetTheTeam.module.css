@@ -16,11 +16,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
 .card{
     aspect-ratio: 4/3;
     width: 30%;
+    min-width: 300px;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -47,5 +49,12 @@
 
 .textContainer h6{
     font-weight: 600;
+}
+
+@media (max-width: 768px){
+    .card{
+        width: 90%;
+    }
+    
 }
 

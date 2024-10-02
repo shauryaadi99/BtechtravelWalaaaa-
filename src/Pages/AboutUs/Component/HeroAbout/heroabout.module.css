@@ -1,6 +1,6 @@
 .mainContainer{
     width: 100%;
-    background: url("/long-boat-blue-water-maya-bay-phi-phi-island-krabi-thailand.jpg");
+    background: url("/premium_photo-1668800128788-a36ce9653f26.avif");
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5); ;
     background-blend-mode: overlay; /* This is the key to make the background image transparent */
@@ -25,4 +25,10 @@
     font-family: "Montserrat", sans-serif;
     font-size: 3rem;
     font-weight: 600;
+}
+
+@media (max-width: 500px){
+    .heading{
+        font-size:2rem !important;
+    }
 }

@@ -8,7 +8,9 @@ const ChooseUs = () => {
         <img src="/ChooseUs.webp" alt="a lady in background" />
       </div>
       <div className={style.textContainer}>
-        <h1 className={style.heading}>Who Are we?</h1>
+        <h1 className={style.heading}>
+          Introducing<span>Btech TravelWala</span>
+        </h1>
         <p className={style.text}>
           We are a team of experienced travelers who have traveled to various
           destinations around the world. We have experienced the best and the

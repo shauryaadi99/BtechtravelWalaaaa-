@@ -2,10 +2,9 @@
     display: flex;
     color: #fff;
     aspect-ratio: 4/1;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     padding: 40px 50px;
-    align-items: flex-start;
+    align-items:flex-start;
     flex-wrap: wrap;
 
 }
@@ -84,4 +83,47 @@
 
 .bottomFooter p{
     padding: 0;
+}
+
+@media (max-width: 1024px) {
+    .paddingRight{
+        padding-right: 20px !important;
+        padding-left: 0px !important;
+        flex: 1 !important;
+    }
+
+    .bottomFooter{
+        padding: 0px 0px 10px 0px;
+    }
+
+    .quickLinks{
+        display: none;
+    }
+
+    .container{
+        flex: none;
+        padding-left: 0px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container{
+        padding-left: 0px;
+    }
+
+    .footer{
+        padding: 20px 20px;
+    }
+
+    .bottomFooter{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .bottomFooter p{
+        font-size: 0.8rem;
+    }
 }

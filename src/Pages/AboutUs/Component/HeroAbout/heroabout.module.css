@@ -1,0 +1,28 @@
+.mainContainer{
+    width: 100%;
+    background: url("/long-boat-blue-water-maya-bay-phi-phi-island-krabi-thailand.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5); ;
+    background-blend-mode: overlay; /* This is the key to make the background image transparent */
+}
+
+.heroContainer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 55%;
+    aspect-ratio: 8/3;
+    color: azure;
+
+}
+
+
+
+.heroContainer h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+}

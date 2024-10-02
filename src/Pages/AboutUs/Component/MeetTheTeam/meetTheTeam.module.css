@@ -1,0 +1,51 @@
+.container{
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 60px;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 20px 0;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    aspect-ratio: 4/3;
+    width: 30%;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.textContainer{
+    width: 100%;
+    padding: 20px;
+}
+
+.textContainer h3{
+    margin: 0 ;
+}
+
+.textContainer p{
+    margin: 0 ;
+}
+
+.textContainer h6{
+    font-weight: 600;
+}
+

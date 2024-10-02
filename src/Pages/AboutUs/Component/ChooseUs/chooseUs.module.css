@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.imgContainer{
+    width: 45%;
+}
+
+.imgContainer img{
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+
+.textContainer{
+    width: 40%;
+    padding: 20px;
+    text-align: justify;
+}
+
+.textContainer h1{
+    font-weight: 600;
+}

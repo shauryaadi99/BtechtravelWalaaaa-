@@ -4,6 +4,10 @@ import Sidebar from "./SideBar/SideBar";
 
 const navLinks = [
   {
+    title: "Home",
+    url: "/",
+  },
+  {
     title: "Personalised Trips",
     url: "/personalised-trips",
   },
@@ -15,10 +19,7 @@ const navLinks = [
     title: "Group Trips",
     url: "/group-trips",
   },
-  {
-    title: "Blogs",
-    url: "/blogs",
-  },
+
   {
     title: "About",
     url: "/about",

@@ -27,10 +27,10 @@ const itemVariants = {
 
 const Links = ({ state, handleClick }) => {
   const items = [
+    "Home",
     "Personalised Trips",
     "Corporate Trips",
     "Group Trips",
-    "Blogs",
     "About",
   ];
 

@@ -17,31 +17,31 @@ const data = [
     id: 2,
     name: "Konarka Sun Temple",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt",
-    img: "/konarksuntemple.jpg",
+    img: "/konarksuntemple2.jpg",
   },
   {
     id: 3,
     name: "Goa Beaches",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt",
-    img: "/goabeach.jpg",
+    img: "/goabeach2.jpg",
   },
   {
     id: 4,
     name: "Hawa Mahal",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt",
-    img: "/hawamahal.jpg",
+    img: "/hawamahal2.jpg",
   },
   {
     id: 5,
     name: "Braj Holi in Mathura Vrindavan",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt",
-    img: "/brajholi.webp",
+    img: "/brajholi1.jpg",
   },
   {
     id: 6,
     name: "Shimla",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt",
-    img: "/shimla.jpg",
+    img: "/shimla2.jpg",
   },
 ];
 

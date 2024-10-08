@@ -16,37 +16,37 @@ import "swiper/css/autoplay";
 const HoneymoonDesties = () => {
   const slideData = [
     {
-      title: "Honeymoon location",
+      title: "Maldives",
       description:
         "Maldives: A paradise on Earth where turquoise waters meet white sandy beaches. The Maldives offers an intimate escape with luxurious overwater villas and breathtaking sunsets.",
       imgSrc: img1,
     },
     {
-      title: "Honeymoon location",
+      title: "Santorini, Greece",
       description:
         "Santorini, Greece: A dreamlike island where blue-domed churches meet crystal-clear waters. Santorini enchants with its stunning sunsets and romantic cliffside views.",
       imgSrc: img2,
     },
     {
-      title: "Honeymoon location",
+      title: "Bora Bora, French Polynesia",
       description:
         "Bora Bora, French Polynesia: An idyllic getaway with pristine lagoons and vibrant coral reefs. Bora Bora promises a romantic retreat with its iconic overwater bungalows and serene ambiance.",
       imgSrc: img3,
     },
     {
-      title: "Honeymoon location",
+      title: "Bali, Indonesia",
       description:
         "Bali, Indonesia: A tropical haven where lush jungles meet serene beaches. Bali offers a perfect blend of culture, adventure, and relaxation for a truly unforgettable honeymoon.",
       imgSrc: img4,
     },
     {
-      title: "Honeymoon location",
+      title: "Amalfi Coast, Italy",
       description:
         "Amalfi Coast, Italy: A picturesque coastline where charming villages cling to cliffs above the sparkling Mediterranean. The Amalfi Coast is a romantic escape with stunning views.",
       imgSrc: img5,
     },
     {
-      title: "Honeymoon location",
+      title: "Maui, Hawaii",
       description:
         " Maui, Hawaii: A breathtaking island where volcanic landscapes meet crystal-clear waters. Maui offers diverse adventures, from exploring lush rainforests to relaxing on golden beaches.",
       imgSrc: img6,

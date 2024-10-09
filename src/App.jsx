@@ -53,9 +53,7 @@ function App() {
         <Route path="/corporate-trips" element={<div />} />
         <Route path="/group-trips" element={<div />} />
         <Route path="/about" element={<AboutUs />} />
-
-        {/* New Routes for Blog Slider and Blog Post Page */}
-        <Route path="/blog" element={<TrandingSlider />} />
+        {/* <Route path="/blog" element={<TrandingSlider />} /> */}
         <Route
           path="/blog/:id"
           element={<BlogPostPage slideData={slideData} />}

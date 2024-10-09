@@ -2,9 +2,8 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/HomePage/HomePage";
 import AboutUs from "./Pages/AboutUs/AboutUs";
-
 import TrandingSlider from "./Pages/HomePage/component/TrandingSlider/TrandingSlider";
-import BlogPostPage from "./Pages/HomePage/component/BlogPostpage/BlogPostPage"; 
+import BlogPostPage from "./Pages/HomePage/component/BlogPostpage/BlogPostPage";
 
 const slideData = [
   {
@@ -57,7 +56,10 @@ function App() {
 
         {/* New Routes for Blog Slider and Blog Post Page */}
         <Route path="/blog" element={<TrandingSlider />} />
-        <Route path="/blog/:id" element={<BlogPostPage slideData={slideData} />} />
+        <Route
+          path="/blog/:id"
+          element={<BlogPostPage slideData={slideData} />}
+        />
       </Routes>
     </BrowserRouter>
   );

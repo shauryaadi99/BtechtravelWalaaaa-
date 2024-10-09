@@ -1,0 +1,42 @@
+.mainContainer{
+    background-image: url('/abstract-purple-watercolor-background-illustration-high-resolution-free-photo_1340-21028.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2); ;
+    background-blend-mode: overlay;
+}
+
+.heroContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto ;
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+.heroContent{
+    width: 40%;
+}
+
+.calculatorContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 12px;
+    width: 40%;
+}
+
+.calculatorContainer h1{
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: orange;
+    margin-bottom: 20px;
+}

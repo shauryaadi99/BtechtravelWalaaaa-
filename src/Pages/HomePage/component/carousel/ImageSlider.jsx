@@ -50,6 +50,8 @@ const ImageSlider = () => {
 
   const preloadImages = (data) => {
     data.forEach((item) => {
+      console.log(item.img);
+      console.log(item);
       const img = new Image(); // It creates a new image element in the memory but does not add it to the DOM.
       img.src = item.img; // It sets the src attribute of the image element to the value of the img property of the item object.
     });

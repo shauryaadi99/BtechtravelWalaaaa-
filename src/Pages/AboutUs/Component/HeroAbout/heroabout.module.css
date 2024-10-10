@@ -1,6 +1,6 @@
 .mainContainer{
     width: 100%;
-    background: url("/public/abstract-purple-watercolor-background-illustration-high-resolution-free-photo_1340-21028.jpg");
+    background: url("/abstract-purple-watercolor-background-illustration-high-resolution-free-photo_1340-21028.jpg");
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.5); ;
     background-blend-mode: overlay; /* This is the key to make the background image transparent */

@@ -1,0 +1,66 @@
+.calciContainer{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-color: #f8faff;
+}
+
+.formContainer{
+    position: absolute;
+    top: -70px;
+    left: 5%;
+    width: 90%;
+    padding: 30px 30px 10px 30px;
+    border: 1px solid #f9f9f9;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.formContainer p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+}
+
+.formContainer h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.bind{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.bind div{
+    width: 48%;
+}
+
+.err{
+    color: red !important;
+    font-family: "DM Sans", sans-serif !important;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.button1{
+    margin: 10px 0;
+    background: linear-gradient(180deg, #d897f0 0%, #c951f4 100%);
+    border: none;
+
+    &:hover{
+        background: linear-gradient(90deg, #c951f4 0%, #d897f0 100%);
+    }
+}
+
+

@@ -2,9 +2,9 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/HomePage/HomePage";
 import AboutUs from "./Pages/AboutUs/AboutUs";
-
 import TrandingSlider from "./Pages/HomePage/component/TrandingSlider/TrandingSlider";
-import BlogPostPage from "./Pages/HomePage/component/BlogPostpage/BlogPostPage"; 
+import BlogPostPage from "./Pages/HomePage/component/BlogPostpage/BlogPostPage";
+import PersonalisedTrips from "./Pages/PersonalisedTrips/PersonalisedTrips";
 
 const slideData = [
   {
@@ -50,14 +50,15 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/personalised-trips" element={<div />} />
+        <Route path="/personalised-trips" element={<PersonalisedTrips />} />
         <Route path="/corporate-trips" element={<div />} />
         <Route path="/group-trips" element={<div />} />
         <Route path="/about" element={<AboutUs />} />
-
-        {/* New Routes for Blog Slider and Blog Post Page */}
         <Route path="/blog" element={<TrandingSlider />} />
-        <Route path="/blog/:id" element={<BlogPostPage slideData={slideData} />} />
+        <Route
+          path="/blog/:id"
+          element={<BlogPostPage slideData={slideData} />}
+        />
       </Routes>
     </BrowserRouter>
   );

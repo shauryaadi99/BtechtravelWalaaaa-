@@ -19,7 +19,10 @@ const Hero = () => {
     <>
       <div
         className="mainContainer"
-        style={{ backgroundColor: "#000", position: "relative", overflow: "hidden" }}
+        style={{
+          position: "relative",
+          overflow: "hidden",
+        }}
       >
         {/* Use <video> tag to include the local india.mp4 video */}
         <video
@@ -37,14 +40,12 @@ const Hero = () => {
           }}
         >
           {/* src="/india.mp4" assumes india.mp4 is in the public folder */}
-          <source src="/india.mp4" type="video/mp4" />
+          <source src="/herobackground.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
-        {/* NavBar component */}
         <NavBar />
 
-        {/* Motion div for the hero section with animations */}
         <motion.div
           className="heroContainer"
           variants={variants}

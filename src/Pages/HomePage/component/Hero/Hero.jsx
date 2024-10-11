@@ -40,7 +40,7 @@ const Hero = () => {
           }}
         >
           {/* src="/india.mp4" assumes india.mp4 is in the public folder */}
-          <source src="/herobackground.mp4" type="video/mp4" />
+          <source src="/heroback.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
